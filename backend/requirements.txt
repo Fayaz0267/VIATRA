@@ -1,0 +1,47 @@
+# ── Web Framework ─────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.30.0
+websockets==12.0
+python-multipart==0.0.9
+
+# ── Auth ──────────────────────────────────────────
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+
+# ── Computer Vision ───────────────────────────────
+opencv-python-headless
+ultralytics          # YOLO11 (latest Ultralytics)
+mediapipe
+torch
+torchvision
+Pillow
+numpy
+
+# ── OCR / License Plate ───────────────────────────
+easyocr
+# openalpr is system-level install — see README
+
+# ── Tracking ──────────────────────────────────────
+lap                  # required by ByteTrack inside ultralytics
+
+# ── Database ──────────────────────────────────────
+sqlalchemy==2.0.30
+asyncpg==0.29.0
+alembic==1.13.1
+psycopg2-binary==2.9.9
+
+# ── Redis ─────────────────────────────────────────
+redis==5.0.4
+
+# ── LLM Providers ─────────────────────────────────
+google-generativeai
+anthropic
+openai
+
+# ── Utils ─────────────────────────────────────────
+python-dotenv==1.0.1
+pydantic==2.7.1
+pydantic-settings==2.3.0
+httpx==0.27.0
+aiofiles==23.2.1
